@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products - SkinCare Beauty</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Our Products 🧴</h1>
+
+<!-- Filter -->
+<div class="filters">
+    <button onclick="filterProducts('dry')">Dry</button>
+    <button onclick="filterProducts('oily')">Oily</button>
+    <button onclick="filterProducts('sensitive')">Sensitive</button>
+    <button onclick="filterProducts('combination')">Combination</button>
+</div>
+<p id="message">Choose your skin type </p>
+<div class="products">
+
+    <div class="card dry">
+        <img src="CeraVe-Daily-Moisturizer-Lotion dry.webp">
+        <h3>Hydrating Cream</h3>
+        <p>Deep hydration for dry skin</p>
+         <p class="price">200MAD</p> 
+        <button onclick="addCart()">Add</button>
+    </div><div class="card dry">
+    <img src="dry skin gel.jpg">
+    <h3> Cleansing Gel</h3>
+    <p>Cleans without drying</p>
+    <p class="price">150 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div>
+<div class="card dry">
+    <img src="avene dry.jpeg">
+    <h3>Hydrating Sunscreen SPF 50</h3>
+    <p>Protects and hydrates dry skin</p>
+    <p class="price">100 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div>
+<div class="card oily">
+    <img src="creme-hydratante-eucerinoil.webp">
+    <h3>Light Hydrating Cream</h3>
+    <p>Hydrates without oil</p>
+    <p class="price">150 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card oily">
+    <img src="Cleansing_Gel oil skin.webp">
+    <h3>Purifying Gel Cleanser</h3>
+    <p>Removes excess oil</p>
+    <p class="price">140 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card oily">
+    <img src="oliskin1.jpg">
+    <h3>Matte Sunscreen SPF 50</h3>
+    <p>No shine, light feel</p>
+    <p class="price">130MAD</p>
+    <button onclick="addCart()">Add</button>
+</div>
+   
+<div class="card sensitive">
+    <img src="cetpahil-cream hydratant sensetive.jpg">
+    <h3>Soothing Cream</h3>
+    <p>Calms and hydrates</p>
+    <p class="price">200MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card sensitive">
+    <img src="BIODERMA SENSIBIO GEL MOUSSANT sensible.jpg">
+    <h3>Gentle Cleanser</h3>
+    <p>Soft and non-irritating</p>
+    <p class="price">160 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card sensitive">
+    <img src="Cetaphil sensetive sun.jpg">
+    <h3>Soothing Sunscreen SPF 50</h3>
+    <p>Protects sensitive skin</p>
+    <p class="price">200 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div>
+    <div class="card combination">
+    <img src="creme-hydratante combi.jpg">
+    <h3>Balance Cream</h3>
+    <p>Hydrates and balances</p>
+    <p class="price">100 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card combination">
+    <img src="combi.avif">
+    <h3>Daily Clean Gel</h3>
+    <p>Clean and fresh skin</p>
+    <p class="price">150MAD</p>
+    <button onclick="addCart()">Add</button>
+</div><div class="card combination">
+    <img src="sun for combi1.jpg">
+    <h3>Balanced Sunscreen SPF 50</h3>
+    <p>Light protection for daily use</p>
+    <p class="price">180 MAD</p>
+    <button onclick="addCart()">Add</button>
+</div>
+   
+</div>
+<div class="menu-btn" onclick="toggleMenu()">
+    ☰
+</div>
+
+<div class="sidebar" id="sidebar">
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="tips.html">Tips</a>
+    <a href="contact.html">Contact</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

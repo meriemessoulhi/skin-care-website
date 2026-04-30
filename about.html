@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - SkinCare Beauty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-btn" onclick="toggleMenu()">
+    ☰
+</div>
+
+<div class="sidebar" id="sidebar">
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="tips.html">Tips</a>
+    <a href="contact.html">Contact</a>
+</div>
+
+<header>
+    <h1>SkinCare Beauty</h1>
+    <p>Your guide to healthy and glowing skin ✨</p>
+</header>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>
+        SkinCare Beauty is a simple guide to help you understand your skin type
+        and choose the right skincare routine.
+    </p>
+</section>
+
+<section class="skin-types">
+    <h2>Choose Your Skin Type</h2>
+
+    <div class="buttons">
+        <button onclick="showSkin('dry')">Dry</button>
+        <button onclick="showSkin('oily')">Oily</button>
+        <button onclick="showSkin('combo')">Combination</button>
+        <button onclick="showSkin('sensitive')">Sensitive</button>
+    </div>
+
+    <div id="result" class="result">
+        Click a button to see details 
+    </div>
+</section>
+<section class="routine">
+    <h2>Daily Routine</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌞 Morning</h3>
+            <p id="morning-text">Cleanser → Moisturizer → Sunscreen</p>
+        </div>
+        <div class="card">
+            <h3>🌙 Night</h3>
+            <p  id="night-text">Cleanser → Serum → Moisturizer</p>
+        </div>
+    </div>
+</section>
+<section class="tips">
+    <h2>General Tips</h2>
+    <ul>
+        <li> Drink enough water</li>
+        <li> Sleep well</li>
+        <li> Don’t sleep with makeup</li>
+        <li> Use products for your skin type</li>
+    </ul>
+</section>
+
+<footer>
+    <i>skin Care Beauty </i>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

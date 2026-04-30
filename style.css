@@ -1,0 +1,344 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.hero {
+    height: 100vh;
+    background: url('skincare-routine_932730-686.jpg') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #f8cdd0;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+.sidebar.active{ 
+    left: 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    background: white;
+}
+header {
+    text-align: center;
+    background: #f8cdd0;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background: #f8cdd0;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f4aeb5;
+    transform: scale(1.05);
+}
+.result {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+.title {
+    text-align: center;
+    margin: 20px;
+}
+
+.filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.products .card {
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.products .card:hover {
+    transform: scale(1.05);
+}
+
+.products .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+}
+.products .card button {
+    margin-top: 10px;
+    background: pink;
+}
+
+#message {
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #f8cdd0;
+    padding: 15px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+    }
+}
+.contact-container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box {
+    background: white;
+    padding: 40px;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.input-group textarea {
+    height: 100px;
+}
+.input-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: gray;
+    transition: 0.3s;
+    background: white;
+    padding: 0 5px;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+    top: -8px;
+    font-size: 12px;
+    color: #f4aeb5;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+.contact-box button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #f8cdd0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-box button:hover {
+    background: #f4aeb5;
+}
+#successMsg {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: green;
+}
+
+.contact-page {
+    height: 100vh;
+    background: linear-gradient(135deg, #f8cdd0, #f4aeb5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info {
+    flex: 1;
+    background: linear-gradient(135deg, #f8cdd0, #f4aeb5);
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+.contact-form-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.contact-form-box form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-form-box textarea {
+    height: 100px;
+}
+
+.contact-form-box button {
+    padding: 12px;
+    border: none;
+    background: #f8cdd0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.contact-form-box button:hover {
+    background: #f4aeb5;
+}
+#successMsg {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+}
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .contact-page {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contact-form-box {
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebar {
+        width: 200px;
+    }
+}
