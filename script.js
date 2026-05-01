@@ -77,24 +77,23 @@ function addCart() {
   document.getElementById("morning-text").innerText = morning;
   document.getElementById("night-text").innerText = night;
 }
+// Récupérer le formulaire et l'élément d'erreur
 const form = document.getElementById("contactForm");
+const error = document.getElementById("error");
 
-if (form) {
-    form.addEventListener("submit", function(e) {
-        e.preventDefault(); // ❗ هادي أهم حاجة
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
 
-        let name = document.getElementById("name").value;
-        let number = document.getElementById("number").value;
-        let message = document.getElementById("messageText").value;
-        let msg = document.getElementById("successMsg");
+  const name = document.getElementById("name").value.trim();
+  const number = document.getElementById("number").value.trim();
+  const message = document.getElementById("message").value.trim();
 
-        if (name === "" || number === "" || message === "") {
-            msg.style.color = "red";
-            msg.innerText = "Fill all fields ❗";
-        } else {
-            msg.style.color = "green";
-            msg.innerText = "Your message has been sent ✅";
-            form.reset();
-        }
-    });
-}
+   // Vérification (validation)
+  if(name === "" || number === "" || message === "") {
+    error.textContent = "Please fill all fields!";
+    return;
+  }
+   // Message succès
+  error.style.color = "green";
+  error.textContent = "Message sent successfully!";
+});
