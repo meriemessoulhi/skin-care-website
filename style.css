@@ -1,12 +1,13 @@
-
- * {
-    margin: 0;
-    padding: 0;
+/* Réinitialisation de base pour tous les éléments */
+* {
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime les espacements internes */
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
 }
+/* Section principale (hero) avec image de fond */
 .hero {
-    height: 100vh;
+    height: 100vh;/* Prend toute la hauteur de l'écran */
     background: url('skincare-routine_932730-686.jpg') no-repeat center/cover;
     display: flex;
     justify-content: center;
@@ -19,6 +20,7 @@
     text-align: center;
     border-radius: 10px;
 }
+/* Bouton menu  */
 .menu-btn {
     position: fixed;
     top: 20px;
@@ -28,8 +30,9 @@
     background: white;
     padding: 10px 15px;
     border-radius: 10px;
-    z-index: 1000;
+    z-index: 1000; /* Toujours au-dessus */
 }
+/* Sidebar (menu latéral) */
 .sidebar {
     position: fixed;
     left: -250px;
@@ -40,10 +43,12 @@
     padding-top: 60px;
     transition: 0.3s;
 }
+/* Quand la sidebar est active */
 .sidebar.active{ 
-    left: 0;
+    left: 0; /* Visible */
 }
 
+/* Liens dans la sidebar */
 .sidebar a {
     display: block;
     padding: 15px;
@@ -79,23 +84,25 @@ button {
     font-weight: bold;
     transition: 0.3s;
 }
-
+/* Effet au survol des boutons */
 button:hover {
     background: #f4aeb5;
     transform: scale(1.05);
 }
+/* Zone de résultat */
 .result {
     background: white;
     padding: 20px;
     border-radius: 10px;
     min-height: 100px;
 }
+/*  Cartes (layout flexible) */
 .cards {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
-
+/* Carte individuelle */
 .card {
     background: white;
     padding: 20px;
@@ -155,11 +162,6 @@ footer {
     margin-top: 20px;
     font-weight: bold;
 }
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-    }
-}
 .contact-container {
     height: 90vh;
     display: flex;
@@ -200,7 +202,7 @@ footer {
     background: white;
     padding: 0 5px;
 }
-
+/* Animation label */
 .input-group input:focus + label,
 .input-group textarea:focus + label,
 .input-group input:valid + label,
@@ -213,6 +215,7 @@ footer {
     color: red;
     font-size: 12px;
 }
+/* Bouton formulaire contact */
 .contact-box button {
     width: 100%;
     padding: 12px;
@@ -226,13 +229,7 @@ footer {
 .contact-box button:hover {
     background: #f4aeb5;
 }
-#successMsg {
-    text-align: center;
-    margin-top: 10px;
-    font-weight: bold;
-    color: green;
-}
-
+/* Page contact */
 .contact-page {
     height: 100vh;
     background: linear-gradient(135deg, #f8cdd0, #f4aeb5);
@@ -258,6 +255,7 @@ footer {
 .contact-info p {
     margin: 10px 0;
 }
+/* Boîte formulaire */
 .contact-form-box {
     flex: 1;
     display: flex;
@@ -307,6 +305,7 @@ footer {
     color: green;
     margin-top: 10px;
 }
+/* Empêche le scroll horizontal */
 html, body {
     width: 100%;
     overflow-x: hidden;
@@ -316,7 +315,7 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+/* Responsive mobile */
 @media (max-width: 768px) {
 
     .cards {
